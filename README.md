@@ -17,4 +17,30 @@ We are using sqlite3 as a database for now to store data.
 ### To Run Server ###
 1. Go to leucine_assignment directory.(you will see manage.py present)
 2. To run server : "python manage.py runserver 0.0.0.0:8000 --settings=tutorial.settings"
+
+
+### API Documentation ###
+
+1. To Upload a new document
+
+        type: POST
+        url: http://localhost:8000/quickstart/document/
+        parameters: document_upload,name
         
+2. To Fetch documents
+
+        type: GET
+        url: http://localhost:8000/quickstart/document/
+
+3. To Rename documents
+       
+        type: PUT
+        url: http://localhost:8000/quickstart/document/
+        parameters: new_name,id
+        
+3. To Delete documents
+       
+        type: DELETE
+        url: http://localhost:8000/quickstart/document/
+        parameters: id
+
