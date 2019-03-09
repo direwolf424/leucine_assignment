@@ -3,6 +3,12 @@
 This README would normally document whatever steps are necessary to get your application up and running.
 We are using sqlite3 as a database for now to store data.
 
+
+Note: to change the storage library we just have to edit the configuration file. 
+        Steps to do it are:
+        1. go to "vim tutorial/settings.py"
+        2.assign variable FILE_STORAGE the destination path.
+       
 ### Dependencies ###
 
 * Python 3.x
